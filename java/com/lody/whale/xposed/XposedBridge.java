@@ -101,7 +101,7 @@ public final class XposedBridge {
             XposedHelpers.resolveStaticMethod(hookMethod);
             AdditionalHookInfo additionalInfo = new AdditionalHookInfo(callbacks);
             long slot = WhaleRuntime.hookMethodNative(hookMethod.getDeclaringClass(), hookMethod, additionalInfo);
-            if (slot <= 0) {
+            if (slot == 0) { //slot有时会有负值
                 throw new IllegalStateException("Failed to hook method: " + hookMethod);
             }
             synchronized (sHookedMethodSlotMap) {
