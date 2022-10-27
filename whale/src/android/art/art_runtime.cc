@@ -78,6 +78,8 @@ bool ArtRuntime::OnLoad(JavaVM *vm, JNIEnv *env, jclass java_class) {
     u4 expected_access_flags = kAccPrivate | kAccStatic | kAccNative;
     if (api_level_ >= ANDROID_Q)
             expected_access_flags |= kAccPublicApi;
+	if (api_level_ >= ANDROID_S)
+        	expected_access_flags |= kAccNterpInvokeFastPathFlag;
     hookEncodeArtMethod();
     jmethodID reserved0 = env->GetStaticMethodID(java_class, kMethodReserved0, "()V");
     jmethodID reserved1 = env->GetStaticMethodID(java_class, kMethodReserved1, "()V");
@@ -106,6 +108,11 @@ bool ArtRuntime::OnLoad(JavaVM *vm, JNIEnv *env, jclass java_class) {
     method_offset_.dex_code_item_offset_offset_ = access_flags_offset + sizeof(u4);
     method_offset_.dex_method_index_offset_ = access_flags_offset + sizeof(u4) * 2;
     method_offset_.method_index_offset_ = access_flags_offset + sizeof(u4) * 3;
+    if (api_level_ >= ANDROID_S){
+        method_offset_.dex_code_item_offset_offset_ = 0; // android 12 没有code_item_offset
+        method_offset_.dex_method_index_offset_ = access_flags_offset + sizeof(u4);
+        method_offset_.method_index_offset_ = access_flags_offset + sizeof(u4) * 2;
+    }
     if (api_level_ < ANDROID_N
         && GetSymbols()->artInterpreterToCompiledCodeBridge != nullptr) {
         method_offset_.interpreter_code_offset_ = jni_code_offset - entrypoint_filed_size;
@@ -241,12 +248,24 @@ ArtRuntime::HookMethod(JNIEnv *env, jclass decl_class, jobject hooked_java_metho
     }
     access_flags |= kAccNative;
     access_flags |= kAccFastNative;
-    if (api_level_ >= ANDROID_P) {
+    if (api_level_ >= ANDROID_P && api_level_ < ANDROID_S) {
         access_flags &= ~kAccCriticalNative_P;
     }
     if (api_level_ >= ANDROID_Q) {
         access_flags &= ~kAccFastInterpreterToInterpreterInvoke;
     }
+
+    if (api_level_ >= ANDROID_S){
+        /*if (param->is_static_){
+            access_flags = 0x1020010A;
+        } else{
+            access_flags = 0x10200102;
+        }*/
+        access_flags &= ~kAccCriticalNative_S;
+        access_flags |= kAccNterpInvokeFastPathFlag;
+        access_flags |= kAccPublic;
+    }
+
     hooked_method.SetAccessFlags(access_flags);
     hooked_method.SetEntryPointFromQuickCompiledCode(
             class_linker_objects_.quick_generic_jni_trampoline_

@@ -64,7 +64,9 @@ class ArtMethod final {
     }
 
     void SetDexCodeItemOffset(u4 offset) {
-        AssignOffset<u4>(jni_method_, offset_->dex_code_item_offset_offset_, offset);
+        if (offset_->dex_code_item_offset_offset_ > 0){
+            AssignOffset<u4>(jni_method_, offset_->dex_code_item_offset_offset_, offset);
+        }
     }
 
     void SetHotnessCount(u2 count) {

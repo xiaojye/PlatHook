@@ -38,7 +38,9 @@ static constexpr uint32_t kAccFastNative = 0x00080000u;   // method (dex only)
 static constexpr uint32_t kAccPreverified = kAccFastNative;  // class (runtime)
 static constexpr uint32_t kAccSkipAccessChecks = kAccPreverified;
 static constexpr uint32_t kAccCriticalNative_P = 0x00200000;  // method (runtime; native only)
+static constexpr uint32_t kAccCriticalNative_S = 0x00100000;  // method (runtime; native only)
 static constexpr uint32_t kAccFastInterpreterToInterpreterInvoke = 0x40000000;
+static constexpr uint32_t kAccNterpInvokeFastPathFlag     = 0x00200000;  // method (runtime)
 // Android M only
 static constexpr uint32_t kAccDontInline = 0x00400000u;  // method (dex only)
 // Android N or later. Set by the verifier for a method we do not want the compiler to compile.

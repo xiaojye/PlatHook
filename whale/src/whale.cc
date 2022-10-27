@@ -122,12 +122,16 @@ OPEN_API void *WDynamicLibSymbol(void *handle, const char *name) {
     if (handle == nullptr || name == nullptr) {
         return nullptr;
     }
+    void* symbol = 0;
 #ifdef linux
     whale::ElfImage *image = reinterpret_cast<whale::ElfImage *>(handle);
-    return image->FindSymbol<void *>(name);
+    symbol = image->FindSymbol<void *>(name);
 #else
-    return dlsym(handle, name);
+    symbol = dlsym(handle, name);
 #endif
+    if (!symbol)
+        LOG(ERROR) << "WDynamicLibSymbol handle " << handle << " name " << name << " symbol " << symbol;
+    return symbol;
 }
 
 OPEN_API void WDynamicLibClose(void *handle) {

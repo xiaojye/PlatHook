@@ -36,11 +36,14 @@ std::unique_ptr<MemoryRange> FindExecuteMemoryRange(const char *name) {
                     return true;
                 }
                 if (strstr(mapname, name)) {
+                    LOG(INFO) << mapname << " " << begin << " " << end << " " << offset << " " << perm;
                     //find the correct base address
+                    //android 12 会取到这种数据 /apex/com.android.art/lib64/libart.so 487171866624 487172603904 0 ---p
                     if (offset == 0) {
                         range->path_ = strdup(mapname);
                         range->base_ = begin;
                         range->end_ = end;
+                        return false;
                     }
                     if (strstr(perm, "x"))
                         return false;
