@@ -133,6 +133,10 @@ class ArtRuntime final {
 
     void hookEncodeArtMethod();
 
+    bool isHookedMethod(void *art_method);
+
+    void hookGetOatQuickMethodHeader(void *art_elf_image_);
+
  private:
     JavaVM *vm_;
     jclass java_class_;

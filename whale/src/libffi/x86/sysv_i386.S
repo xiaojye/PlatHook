@@ -831,7 +831,7 @@ EHFrame0:
 #elif defined(HAVE_AS_X86_64_UNWIND_SECTION_TYPE)
 .section .eh_frame,EH_FRAME_FLAGS,@unwind
 #else
-.section .eh_frame,EH_FRAME_FLAGS,@progbits
+//.section .eh_frame,EH_FRAME_FLAGS,@progbits
 #endif
 
 #ifdef HAVE_AS_X86_PCREL
