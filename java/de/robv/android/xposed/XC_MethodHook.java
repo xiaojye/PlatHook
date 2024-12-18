@@ -1,8 +1,8 @@
-package com.lody.whale.xposed;
+package de.robv.android.xposed;
 
 import java.lang.reflect.Member;
 
-import com.lody.whale.xposed.callbacks.XCallback;
+import de.robv.android.xposed.callbacks.XCallback;
 
 /**
  * Callback class for method hooks.

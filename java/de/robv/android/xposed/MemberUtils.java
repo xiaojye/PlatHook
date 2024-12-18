@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.lody.whale.xposed;
+package de.robv.android.xposed;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Member;

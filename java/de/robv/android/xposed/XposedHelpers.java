@@ -1,4 +1,4 @@
-package com.lody.whale.xposed;
+package de.robv.android.xposed;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;

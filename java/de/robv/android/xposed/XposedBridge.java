@@ -1,9 +1,8 @@
-package com.lody.whale.xposed;
+package de.robv.android.xposed;
 
 import android.util.Log;
 
 import com.lody.whale.WhaleRuntime;
-import com.lody.whale.xposed.XC_MethodHook.MethodHookParam;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -215,7 +214,7 @@ public final class XposedBridge {
             }
         }
 
-        MethodHookParam param = new MethodHookParam();
+        XC_MethodHook.MethodHookParam param = new XC_MethodHook.MethodHookParam();
         param.method = method;
         param.thisObject = thisObject;
         param.args = args;

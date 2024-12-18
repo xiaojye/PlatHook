@@ -2,7 +2,7 @@ package com.lody.whale;
 
 import android.os.Build;
 
-import com.lody.whale.xposed.XposedBridge;
+import de.robv.android.xposed.XposedBridge;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Member;

@@ -1,6 +1,6 @@
-package com.lody.whale.xposed;
+package de.robv.android.xposed;
 
-import com.lody.whale.xposed.callbacks.XCallback;
+import de.robv.android.xposed.callbacks.XCallback;
 
 /**
  * A special case of {@link XC_MethodHook} which completely replaces the original method.

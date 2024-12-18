@@ -1,4 +1,4 @@
-package com.lody.whale.xposed.callbacks;
+package de.robv.android.xposed.callbacks;
 
 import android.os.Bundle;
 
