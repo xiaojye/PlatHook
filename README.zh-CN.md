@@ -97,8 +97,6 @@ cmake .
 make -j8
 ```
 
-## Technogy communication
-> **QQ Group: 977793836**
 
 
 

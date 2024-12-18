@@ -100,10 +100,7 @@ cmake .
 make -j4
 ```
 
-## Technogy communication
-> [GOTO => Discord](https://discord.gg/j2Cdy2g)
 
-> Email: imlody@foxmail.com
 
 
 [0]: https://github.com/asLody/whale/blob/master/LOGO.png?raw=true
