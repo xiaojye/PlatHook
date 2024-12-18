@@ -13,3 +13,4 @@ Others － 这里记录性能优化和安全性增强等改进。
 **Changed**
 - built目录改名为prebuilt
 - 修改java层代码，将Xposed相关代码移动到de.robv.android.xposed目录下
+- test目录由whale/test移动到/test
