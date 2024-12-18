@@ -54,14 +54,14 @@ Whale内置了 **Jit Engine**, 当你有更高级的Hook需求时可以通过Jit
 不再需要像从前那样通过工具来生成丑陋的hard code。
 
 ## 编译
-我们已提前编译了Android & IOS的**二进制版本**，您可以在`built目录`找到它们。
+我们已提前编译了Android & IOS的**二进制版本**，您可以在`prebuilt目录`找到它们。
 
 Whale使用了CMake来构建项目，所以你需要在你的系统上安装CMake。
 
 #### Android
 1. 如果需要使用`Java Hook`, 请把java文件夹的代码复制到你的项目。
 
-2. 直接使用二进制，你只需要复制 `built/Android` 下你所需的abi到你的项目的src/main/jniLibs下。
+2. 直接使用二进制，你只需要复制 `prebuilt/Android` 下你所需的abi到你的项目的src/main/jniLibs下。
 
 3. 如果需要编译源码，请在build.gradle中指定CMakelists.txt：
 ```

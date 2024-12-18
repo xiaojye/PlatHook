@@ -57,14 +57,14 @@ Whale has a `built-in Jit Engine`, When you have more advanced Hook requirements
 There is no longer the need to generate ugly hard code through tools as before.
 
 ## Compile
-We have pre-built binary versions of Android & IOS. You can find them in the built directory.
+We have pre-built **binary versions** of Android & IOS. You can find them in the `prebuilt directory`.
 
 Whale uses CMake to build projects, so you need to install CMake on your system.
 
 #### Android
 1. If you need to use ` Java Hook ` please copy java folder to your project.
 
-2. Direct use of binary，You just copy the files under `built/Android` to `src/main/jniLibs` in your project.
+2. Direct use of binary，You just copy the files under `prebuilt/Android` to `src/main/jniLibs` in your project.
 
 3. If you need to compile the source code, specify `CMakeLists.txt` in build.gradle:
 ```
