@@ -1,7 +1,7 @@
 # Whale
 ![logo][0]
 
-[Chinese Version](https://github.com/asLody/whale/blob/master/README.zh-CN.md)
+[Chinese Version](https://github.com/xiaojye/whale/blob/master/README.zh-CN.md)
 
 [![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
 ## Overview
