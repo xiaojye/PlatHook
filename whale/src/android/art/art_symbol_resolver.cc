@@ -71,12 +71,12 @@ SYMBOL kArt_JniEnvExt_NewLocalRef = "_ZN3art9JNIEnvExt11NewLocalRefEPNS_6mirror6
 
 bool ArtSymbolResolver::Resolve(void *elf_image, s4 api_level) {
 #define FIND_SYMBOL(symbol, decl, ret)  \
-        if ((decl = reinterpret_cast<typeof(decl)>(WDynamicLibSymbol(elf_image, symbol))) == nullptr) {  \
+    if ((decl = reinterpret_cast<decltype(decl)>(WDynamicLibSymbol(elf_image, symbol))) == nullptr) {  \
         if (ret) {  \
             LOG(ERROR) << "Failed to resolve symbol : " << #symbol;  \
             return false;  \
-         } \
-        }
+        } \
+    }
     FIND_SYMBOL(kArt_GetMethodShorty, symbols_.Art_GetMethodShorty, false);
     if (symbols_.Art_GetMethodShorty == nullptr) {
         FIND_SYMBOL(kArt_GetMethodShorty_Legacy, symbols_.Art_GetMethodShorty, false);
