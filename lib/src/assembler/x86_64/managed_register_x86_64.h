@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_MANAGED_REGISTER_X86_64_H_
-#define WHALE_ASSEMBLER_MANAGED_REGISTER_X86_64_H_
+#ifndef PLATHOOK_ASSEMBLER_MANAGED_REGISTER_X86_64_H_
+#define PLATHOOK_ASSEMBLER_MANAGED_REGISTER_X86_64_H_
 
 #include "base/logging.h"
 #include "assembler/x86_64/registers_x86_64.h"
@@ -169,4 +169,4 @@ class X86_64ManagedRegister : public ManagedRegister {
 }  // namespace x86_64
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_MANAGED_REGISTER_X86_64_H_
+#endif  // PLATHOOK_ASSEMBLER_MANAGED_REGISTER_X86_64_H_

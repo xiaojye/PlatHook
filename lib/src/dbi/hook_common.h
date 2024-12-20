@@ -1,5 +1,5 @@
-#ifndef WHALE_ARCH_HOOK_H_
-#define WHALE_ARCH_HOOK_H_
+#ifndef PLATHOOK_ARCH_HOOK_H_
+#define PLATHOOK_ARCH_HOOK_H_
 
 #include <cstdint>
 #include <map>
@@ -108,5 +108,5 @@ class InterceptSysCallHook : public Hook {
 
 }  // namespace whale
 
-#endif  // WHALE_ARCH_HOOK_H_
+#endif  // PLATHOOK_ARCH_HOOK_H_
 

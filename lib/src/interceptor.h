@@ -1,5 +1,5 @@
-#ifndef WHALE_CODE_INTERCEPTOR_H_
-#define WHALE_CODE_INTERCEPTOR_H_
+#ifndef PLATHOOK_CODE_INTERCEPTOR_H_
+#define PLATHOOK_CODE_INTERCEPTOR_H_
 
 #include <list>
 #include <cstdint>
@@ -30,5 +30,5 @@ class Interceptor {
 
 }  // namespace whale
 
-#endif  // WHALE_CODE_INTERCEPTOR_H_
+#endif  // PLATHOOK_CODE_INTERCEPTOR_H_
 

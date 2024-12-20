@@ -7,7 +7,7 @@
 #include "base/logging.h"
 #include "base/primitive_types.h"
 
-#ifdef WHALE_DISASM_AFTER_REWRITE
+#ifdef PLATHOOK_DISASM_AFTER_REWRITE
 #include "assembler/vixl/aarch32/disasm-aarch32.h"
 #endif
 
@@ -18,7 +18,7 @@ namespace arm {
 
 using namespace vixl::aarch32;  // NOLINT
 
-#ifdef WHALE_DISASM_AFTER_REWRITE
+#ifdef PLATHOOK_DISASM_AFTER_REWRITE
 
 void Disassemble(MacroAssembler *masm) {
     whale::LogMessage log("Disassembler", static_cast<int>(masm->GetSizeOfCodeGenerated()));
@@ -81,7 +81,7 @@ ArmInlineHook::BuildTrampoline(u4 tail) {
 
     masm.FinalizeCode();
 
-#ifdef WHALE_DISASM_AFTER_REWRITE
+#ifdef PLATHOOK_DISASM_AFTER_REWRITE
     Disassemble(&masm);
 #endif
 

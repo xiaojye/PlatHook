@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_JNI_TRAMPOLINE_H_
-#define WHALE_ANDROID_ART_JNI_TRAMPOLINE_H_
+#ifndef PLATHOOK_ANDROID_ART_JNI_TRAMPOLINE_H_
+#define PLATHOOK_ANDROID_ART_JNI_TRAMPOLINE_H_
 
 #include "android/art/art_hook_param.h"
 
@@ -13,4 +13,4 @@ void BuildJniClosure(ArtHookParam *param);
 }  // namespace art
 }  // namespace whale
 
-#endif  // WHALE_ANDROID_ART_JNI_TRAMPOLINE_H_
+#endif  // PLATHOOK_ANDROID_ART_JNI_TRAMPOLINE_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_SYMBOL_RESOLVER_H_
-#define WHALE_ANDROID_ART_SYMBOL_RESOLVER_H_
+#ifndef PLATHOOK_ANDROID_ART_SYMBOL_RESOLVER_H_
+#define PLATHOOK_ANDROID_ART_SYMBOL_RESOLVER_H_
 
 #include <jni.h>
 #include "platform/linux/elf_image.h"
@@ -51,4 +51,4 @@ class ArtSymbolResolver {
 }  // namespace art
 }  // namespace whale
 
-#endif  // WHALE_ANDROID_ART_SYMBOL_RESOLVER_H_
+#endif  // PLATHOOK_ANDROID_ART_SYMBOL_RESOLVER_H_

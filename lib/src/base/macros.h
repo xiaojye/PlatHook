@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_MACROS_H_
-#define WHALE_BASE_MACROS_H_
+#ifndef PLATHOOK_BASE_MACROS_H_
+#define PLATHOOK_BASE_MACROS_H_
 
 #define DISALLOW_ALLOCATION() \
   public: \
@@ -48,4 +48,4 @@ DISALLOW_COPY_AND_ASSIGN(TypeName)
 #define OPEN_API __attribute__((visibility("default")))
 #define C_API extern "C"
 
-#endif  // WHALE_BASE_MACROS_H_
+#endif  // PLATHOOK_BASE_MACROS_H_

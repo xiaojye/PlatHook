@@ -1,5 +1,5 @@
-#ifndef WHALE_DBI_X86_INTERCEPT_SYSCALL_HOOK_H_
-#define WHALE_DBI_X86_INTERCEPT_SYSCALL_HOOK_H_
+#ifndef PLATHOOK_DBI_X86_INTERCEPT_SYSCALL_HOOK_H_
+#define PLATHOOK_DBI_X86_INTERCEPT_SYSCALL_HOOK_H_
 
 #include "dbi/hook_common.h"
 
@@ -17,4 +17,4 @@ class X86InterceptSysCallHook : public InterceptSysCallHook {
 }  // namespace x86
 }  // namespace whale
 
-#endif // WHALE_DBI_X86_INTERCEPT_SYSCALL_HOOK_H_
+#endif // PLATHOOK_DBI_X86_INTERCEPT_SYSCALL_HOOK_H_

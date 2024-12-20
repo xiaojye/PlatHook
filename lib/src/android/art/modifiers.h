@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_MODIFIERS_H_
-#define WHALE_ANDROID_ART_MODIFIERS_H_
+#ifndef PLATHOOK_ANDROID_ART_MODIFIERS_H_
+#define PLATHOOK_ANDROID_ART_MODIFIERS_H_
 
 #include "base/primitive_types.h"
 
@@ -58,4 +58,4 @@ static constexpr uint32_t kAccHiddenapiBits =         0x30000000;  // field, met
 }  // namespace art
 }  // namespace whale
 
-#endif  // WHALE_ANDROID_ART_MODIFIERS_H_
+#endif  // PLATHOOK_ANDROID_ART_MODIFIERS_H_

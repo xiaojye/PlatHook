@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_INTERCEPT_PARAM_H_
-#define WHALE_ANDROID_ART_INTERCEPT_PARAM_H_
+#ifndef PLATHOOK_ANDROID_ART_INTERCEPT_PARAM_H_
+#define PLATHOOK_ANDROID_ART_INTERCEPT_PARAM_H_
 
 #include <jni.h>
 #include "base/primitive_types.h"
@@ -28,4 +28,4 @@ struct ArtHookParam final {
 }  // namespace art
 }  // namespace whale
 
-#endif  // WHALE_ANDROID_ART_INTERCEPT_PARAM_H_
+#endif  // PLATHOOK_ANDROID_ART_INTERCEPT_PARAM_H_

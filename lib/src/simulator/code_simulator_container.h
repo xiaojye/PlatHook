@@ -1,5 +1,5 @@
-#ifndef WHALE_SIMULATOR_CODE_SIMULATOR_CONTAINER_H_
-#define WHALE_SIMULATOR_CODE_SIMULATOR_CONTAINER_H_
+#ifndef PLATHOOK_SIMULATOR_CODE_SIMULATOR_CONTAINER_H_
+#define PLATHOOK_SIMULATOR_CODE_SIMULATOR_CONTAINER_H_
 
 #include <dbi/instruction_set.h>
 #include "simulator/code_simulator.h"
@@ -38,6 +38,6 @@ class CodeSimulatorContainer {
 }  // namespace whale
 
 
-#endif  // WHALE_SIMULATOR_CODE_SIMULATOR_CONTAINER_H_
+#endif  // PLATHOOK_SIMULATOR_CODE_SIMULATOR_CONTAINER_H_
 
 

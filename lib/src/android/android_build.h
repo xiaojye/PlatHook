@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ANDROID_BUILD_H_
-#define WHALE_ANDROID_ANDROID_BUILD_H_
+#ifndef PLATHOOK_ANDROID_ANDROID_BUILD_H_
+#define PLATHOOK_ANDROID_ANDROID_BUILD_H_
 
 #include <cstdint>
 #include <cstdlib>
@@ -30,4 +30,4 @@ static inline int32_t GetAndroidApiLevel() {
     return atoi(prop_value);
 }
 
-#endif  // WHALE_ANDROID_ANDROID_BUILD_H_
+#endif  // PLATHOOK_ANDROID_ANDROID_BUILD_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_ASSEMBLER_H_
-#define WHALE_ASSEMBLER_ASSEMBLER_H_
+#ifndef PLATHOOK_ASSEMBLER_ASSEMBLER_H_
+#define PLATHOOK_ASSEMBLER_ASSEMBLER_H_
 
 #include "assembler/label.h"
 #include "assembler/memory_region.h"
@@ -282,4 +282,4 @@ class Assembler {
 
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_ASSEMBLER_H_
+#endif  // PLATHOOK_ASSEMBLER_ASSEMBLER_H_

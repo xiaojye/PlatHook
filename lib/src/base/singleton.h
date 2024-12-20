@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_SINGLETON_H_
-#define WHALE_BASE_SINGLETON_H_
+#ifndef PLATHOOK_BASE_SINGLETON_H_
+#define PLATHOOK_BASE_SINGLETON_H_
 
 template<typename T>
 class Singleton {
@@ -29,4 +29,4 @@ class Singleton {
     bool initialized_;
 };
 
-#endif  // WHALE_BASE_SINGLETON_H_
+#endif  // PLATHOOK_BASE_SINGLETON_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_JAVA_TYPES_H_
-#define WHALE_ANDROID_ART_JAVA_TYPES_H_
+#ifndef PLATHOOK_ANDROID_ART_JAVA_TYPES_H_
+#define PLATHOOK_ANDROID_ART_JAVA_TYPES_H_
 
 #include <jni.h>
 #include "android/art/art_runtime.h"
@@ -58,4 +58,4 @@ struct Types {
 }  // namespace art
 }  // namespace whale
 
-#endif  // WHALE_ANDROID_ART_JAVA_TYPES_H_
+#endif  // PLATHOOK_ANDROID_ART_JAVA_TYPES_H_

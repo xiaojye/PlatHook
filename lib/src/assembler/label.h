@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_LABEL_H_
-#define WHALE_ASSEMBLER_LABEL_H_
+#ifndef PLATHOOK_ASSEMBLER_LABEL_H_
+#define PLATHOOK_ASSEMBLER_LABEL_H_
 
 #include <cstdint>
 #include "base/logging.h"
@@ -105,4 +105,4 @@ class Label {
 
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_LABEL_H_
+#endif  // PLATHOOK_ASSEMBLER_LABEL_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_DBI_MACHO_IMPORT_HOOK_H_
-#define WHALE_DBI_MACHO_IMPORT_HOOK_H_
+#ifndef PLATHOOK_DBI_MACHO_IMPORT_HOOK_H_
+#define PLATHOOK_DBI_MACHO_IMPORT_HOOK_H_
 
 #include "dbi/hook_common.h"
 #include <mach-o/loader.h>
@@ -47,4 +47,4 @@ class MachoImportHook final : public ImportHook {
 }  // namespace darwin
 }  // namespace whale
 
-#endif  // WHALE_DBI_MACHO_IMPORT_HOOK_H_
+#endif  // PLATHOOK_DBI_MACHO_IMPORT_HOOK_H_

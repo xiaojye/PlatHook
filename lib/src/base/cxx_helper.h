@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_CXX_HELPER_H_
-#define WHALE_BASE_CXX_HELPER_H_
+#ifndef PLATHOOK_BASE_CXX_HELPER_H_
+#define PLATHOOK_BASE_CXX_HELPER_H_
 
 #include <cstdlib>
 #include "base/primitive_types.h"
@@ -50,4 +50,4 @@ static inline void AssignOffset(ptr_t ptr, size_t offset, T member) {
     *OffsetOf<T *>(ptr, offset) = member;
 }
 
-#endif  // WHALE_BASE_CXX_HELPER_H_
+#endif  // PLATHOOK_BASE_CXX_HELPER_H_

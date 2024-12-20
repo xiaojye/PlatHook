@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_MANAGED_REGISTER_X86_H_
-#define WHALE_ASSEMBLER_MANAGED_REGISTER_X86_H_
+#ifndef PLATHOOK_ASSEMBLER_MANAGED_REGISTER_X86_H_
+#define PLATHOOK_ASSEMBLER_MANAGED_REGISTER_X86_H_
 
 #include <ostream>
 #include "assembler/x86/registers_x86.h"
@@ -176,4 +176,4 @@ class X86ManagedRegister : public ManagedRegister {
 }  // namespace x86
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_MANAGED_REGISTER_X86_H_
+#endif  // PLATHOOK_ASSEMBLER_MANAGED_REGISTER_X86_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_X86_64_ASSEMBLER_X86_64_H_
-#define WHALE_ASSEMBLER_X86_64_ASSEMBLER_X86_64_H_
+#ifndef PLATHOOK_ASSEMBLER_X86_64_ASSEMBLER_X86_64_H_
+#define PLATHOOK_ASSEMBLER_X86_64_ASSEMBLER_X86_64_H_
 
 #include <cstdint>
 #include <vector>
@@ -1273,4 +1273,4 @@ inline void X86_64Assembler::EmitOperandSizeOverride() {
 }  // namespace x86_64
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_X86_64_ASSEMBLER_X86_64_H_
+#endif  // PLATHOOK_ASSEMBLER_X86_64_ASSEMBLER_X86_64_H_

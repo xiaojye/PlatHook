@@ -1,5 +1,5 @@
-#ifndef WHALE_PUBLIC_H_
-#define WHALE_PUBLIC_H_
+#ifndef PLATHOOK_PUBLIC_H_
+#define PLATHOOK_PUBLIC_H_
 
 #define NULLABLE
 
@@ -20,4 +20,4 @@ void *WDynamicLibSymbol(void *handle, const char *name);
 #ifdef __cplusplus
 }
 #endif  // __cplusplus
-#endif  // WHALE_PUBLIC_H_
+#endif  // PLATHOOK_PUBLIC_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_NATIVE_BRIDGE_H_
-#define WHALE_ANDROID_NATIVE_BRIDGE_H_
+#ifndef PLATHOOK_ANDROID_NATIVE_BRIDGE_H_
+#define PLATHOOK_ANDROID_NATIVE_BRIDGE_H_
 
 #include <cstdint>
 #include <jni.h>
@@ -128,4 +128,4 @@ struct NativeBridgeCallbacks {
 };
 
 
-#endif  // WHALE_ANDROID_NATIVE_BRIDGE_H_
+#endif  // PLATHOOK_ANDROID_NATIVE_BRIDGE_H_

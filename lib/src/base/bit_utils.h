@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_BIT_UTILS_H_
-#define WHALE_BASE_BIT_UTILS_H_
+#ifndef PLATHOOK_BASE_BIT_UTILS_H_
+#define PLATHOOK_BASE_BIT_UTILS_H_
 
 #include <cstddef>
 #include <type_traits>
@@ -475,5 +475,5 @@ inline static constexpr size_t BitsToBytesRoundUp(size_t num_bits) {
 
 }  // namespace whale
 
-#endif  // WHALE_BASE_BIT_UTILS_H_
+#endif  // PLATHOOK_BASE_BIT_UTILS_H_
 

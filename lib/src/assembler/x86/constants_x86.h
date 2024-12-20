@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_CONSTANTS_X86_H_
-#define WHALE_ASSEMBLER_CONSTANTS_X86_H_
+#ifndef PLATHOOK_ASSEMBLER_CONSTANTS_X86_H_
+#define PLATHOOK_ASSEMBLER_CONSTANTS_X86_H_
 
 #include <cstdint>
 #include "base/macros.h"
@@ -91,4 +91,4 @@ class Instr {
 }  // namespace x86
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_CONSTANTS_X86_H_
+#endif  // PLATHOOK_ASSEMBLER_CONSTANTS_X86_H_

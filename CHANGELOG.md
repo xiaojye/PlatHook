@@ -20,6 +20,7 @@ Others － 这里记录性能优化和安全性增强等改进。
 - 将/toolchain/ios.toolchain.cmake重命名为ios-toolchain.cmake
 - 将 com.lody.whale 包重命名为 com.xiaojye.plathook
 - 将 WhaleRuntime 类重命名为 PlatHookJava
+- WHALE_ 统一改为 PLATHOOK_
 
 **Removed**
 - 移除LOGO文件

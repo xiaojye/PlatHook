@@ -1,5 +1,5 @@
-#ifndef WHALE_PLATFORM_LINUX_ELF_READER_H_
-#define WHALE_PLATFORM_LINUX_ELF_READER_H_
+#ifndef PLATHOOK_PLATFORM_LINUX_ELF_READER_H_
+#define PLATHOOK_PLATFORM_LINUX_ELF_READER_H_
 
 #include <cstdint>
 #include <elf.h>
@@ -154,4 +154,4 @@ class ElfImage {
 
 }  // namespace whale
 
-#endif  // WHALE_PLATFORM_LINUX_ELF_READER_H_
+#endif  // PLATHOOK_PLATFORM_LINUX_ELF_READER_H_

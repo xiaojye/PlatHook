@@ -1,5 +1,5 @@
-#ifndef WHALE_ARCH_X86_INLINE_HOOK_X86_H_
-#define WHALE_ARCH_X86_INLINE_HOOK_X86_H_
+#ifndef PLATHOOK_ARCH_X86_INLINE_HOOK_X86_H_
+#define PLATHOOK_ARCH_X86_INLINE_HOOK_X86_H_
 
 #include "dbi/hook_common.h"
 #include "base/primitive_types.h"
@@ -32,4 +32,4 @@ class X86InlineHook : public InlineHook {
 }  // namespace x86
 }  // namespace whale
 
-#endif  // WHALE_ARCH_X86_INLINE_HOOK_X86_H_
+#endif  // PLATHOOK_ARCH_X86_INLINE_HOOK_X86_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_FFI_CXX_H_
-#define WHALE_FFI_CXX_H_
+#ifndef PLATHOOK_FFI_CXX_H_
+#define PLATHOOK_FFI_CXX_H_
 
 #include <cstdarg>
 #include <list>
@@ -114,4 +114,4 @@ class FFICallInterface {
     std::list<FFIClosure *> closures_;
 };
 
-#endif //WHALE_FFI_CXX_H_
+#endif //PLATHOOK_FFI_CXX_H_

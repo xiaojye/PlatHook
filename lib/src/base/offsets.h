@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_OFFSETS_H_
-#define WHALE_BASE_OFFSETS_H_
+#ifndef PLATHOOK_BASE_OFFSETS_H_
+#define PLATHOOK_BASE_OFFSETS_H_
 
 #include <cstddef>
 #include <cstdint>
@@ -57,4 +57,4 @@ class MemberOffset : public Offset {
 
 }
 
-#endif  // WHALE_BASE_OFFSETS_H_
+#endif  // PLATHOOK_BASE_OFFSETS_H_

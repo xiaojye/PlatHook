@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_ENUMS_H_
-#define WHALE_BASE_ENUMS_H_
+#ifndef PLATHOOK_BASE_ENUMS_H_
+#define PLATHOOK_BASE_ENUMS_H_
 
 
 #include <cstddef>
@@ -29,4 +29,4 @@ static constexpr PointerSize kRuntimePointerSize = sizeof(void *) == 8U
                                                    ? PointerSize::k64
                                                    : PointerSize::k32;
 
-#endif // WHALE_BASE_ENUMS_H_
+#endif // PLATHOOK_BASE_ENUMS_H_

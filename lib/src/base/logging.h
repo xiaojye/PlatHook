@@ -1,5 +1,5 @@
-#ifndef _WHALE_BASE_LOGGING_H_
-#define _WHALE_BASE_LOGGING_H_
+#ifndef _PLATHOOK_BASE_LOGGING_H_
+#define _PLATHOOK_BASE_LOGGING_H_
 
 #include <string>
 #include <sstream>
@@ -219,4 +219,4 @@ class LogMessageFatal : public LogMessage {
 
 }  // namespace whale
 
-#endif  // _WHALE_BASE_LOGGING_H_
+#endif  // _PLATHOOK_BASE_LOGGING_H_

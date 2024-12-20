@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_X86_64_CONSTANTS_X86_64_H_
-#define WHALE_ASSEMBLER_X86_64_CONSTANTS_X86_64_H_
+#ifndef PLATHOOK_ASSEMBLER_X86_64_CONSTANTS_X86_64_H_
+#define PLATHOOK_ASSEMBLER_X86_64_CONSTANTS_X86_64_H_
 
 #include <cstdint>
 #include "assembler/x86_64/registers_x86_64.h"
@@ -123,4 +123,4 @@ class Instr {
 }  // namespace x86_64
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_X86_64_CONSTANTS_X86_64_H_
+#endif  // PLATHOOK_ASSEMBLER_X86_64_CONSTANTS_X86_64_H_

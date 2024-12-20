@@ -1,5 +1,5 @@
-#ifndef WHALE_PLATFORM_PROCESS_MAP_H_
-#define WHALE_PLATFORM_PROCESS_MAP_H_
+#ifndef PLATHOOK_PLATFORM_PROCESS_MAP_H_
+#define PLATHOOK_PLATFORM_PROCESS_MAP_H_
 
 #include <malloc.h>
 #include <functional>
@@ -42,4 +42,4 @@ void ForeachMemoryRange(std::function<bool(uintptr_t, uintptr_t, uintptr_t, char
 
 }  // namespace whale
 
-#endif  // WHALE_PLATFORM_PROCESS_MAP_H_
+#endif  // PLATHOOK_PLATFORM_PROCESS_MAP_H_

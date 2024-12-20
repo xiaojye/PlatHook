@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_JNI_HELPER_H_
-#define WHALE_ANDROID_ART_JNI_HELPER_H_
+#ifndef PLATHOOK_ANDROID_ART_JNI_HELPER_H_
+#define PLATHOOK_ANDROID_ART_JNI_HELPER_H_
 
 #include <jni.h>
 #include <base/macros.h>
@@ -70,4 +70,4 @@ class ScopedLocalRef {
     DISALLOW_COPY_AND_ASSIGN(ScopedLocalRef);
 };
 
-#endif  // WHALE_ANDROID_ART_JNI_HELPER_H_
+#endif  // PLATHOOK_ANDROID_ART_JNI_HELPER_H_

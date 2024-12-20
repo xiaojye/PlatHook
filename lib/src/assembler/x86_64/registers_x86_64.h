@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_REGISTERS_X86_64_H_
-#define WHALE_ASSEMBLER_REGISTERS_X86_64_H_
+#ifndef PLATHOOK_ASSEMBLER_REGISTERS_X86_64_H_
+#define PLATHOOK_ASSEMBLER_REGISTERS_X86_64_H_
 
 namespace whale {
 namespace x86_64 {
@@ -49,4 +49,4 @@ enum FloatRegister {
 }  // namespace x86_64
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_REGISTERS_X86_64_H_
+#endif  // PLATHOOK_ASSEMBLER_REGISTERS_X86_64_H_

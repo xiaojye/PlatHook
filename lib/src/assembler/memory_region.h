@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_MEMORY_REGION_H_
-#define WHALE_ASSEMBLER_MEMORY_REGION_H_
+#ifndef PLATHOOK_ASSEMBLER_MEMORY_REGION_H_
+#define PLATHOOK_ASSEMBLER_MEMORY_REGION_H_
 
 #include <cstdint>
 #include <type_traits>
@@ -143,4 +143,4 @@ class MemoryRegion final : public ValueObject {
 
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_MEMORY_REGION_H_
+#endif  // PLATHOOK_ASSEMBLER_MEMORY_REGION_H_

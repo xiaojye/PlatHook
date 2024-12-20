@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_ARRAY_REF_H_
-#define WHALE_BASE_ARRAY_REF_H_
+#ifndef PLATHOOK_BASE_ARRAY_REF_H_
+#define PLATHOOK_BASE_ARRAY_REF_H_
 
 #include <cstddef>
 #include <iterator>
@@ -192,4 +192,4 @@ bool operator!=(const ArrayRef<T> &lhs, const ArrayRef<T> &rhs) {
 
 }  // namespace whale
 
-#endif  // WHALE_BASE_ARRAY_REF_H_
+#endif  // PLATHOOK_BASE_ARRAY_REF_H_

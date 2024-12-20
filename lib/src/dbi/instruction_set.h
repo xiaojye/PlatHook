@@ -1,5 +1,5 @@
-#ifndef WHALE_ARCH_INSTRUCTION_SET_H_
-#define WHALE_ARCH_INSTRUCTION_SET_H_
+#ifndef PLATHOOK_ARCH_INSTRUCTION_SET_H_
+#define PLATHOOK_ARCH_INSTRUCTION_SET_H_
 
 #include "base/macros.h"
 #include <iostream>
@@ -107,4 +107,4 @@ constexpr size_t GetInstructionSetInstructionAlignment(InstructionSet isa) {
 
 }  // namespace whale
 
-#endif  // WHALE_ARCH_INSTRUCTION_SET_H_
+#endif  // PLATHOOK_ARCH_INSTRUCTION_SET_H_

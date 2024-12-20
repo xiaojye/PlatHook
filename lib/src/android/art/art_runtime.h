@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_INTERCEPTOR_H_
-#define WHALE_ANDROID_ART_INTERCEPTOR_H_
+#ifndef PLATHOOK_ANDROID_ART_INTERCEPTOR_H_
+#define PLATHOOK_ANDROID_ART_INTERCEPTOR_H_
 
 #include <jni.h>
 #include <map>
@@ -160,4 +160,4 @@ class ArtRuntime final {
 }  // namespace art
 }  // namespace whale
 
-#endif  // WHALE_ANDROID_ART_INTERCEPTOR_H_
+#endif  // PLATHOOK_ANDROID_ART_INTERCEPTOR_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_ASSEMBLER_VALUE_OBJECT_H_
-#define WHALE_ASSEMBLER_VALUE_OBJECT_H_
+#ifndef PLATHOOK_ASSEMBLER_VALUE_OBJECT_H_
+#define PLATHOOK_ASSEMBLER_VALUE_OBJECT_H_
 
 #include "base/macros.h"
 
@@ -12,4 +12,4 @@ class ValueObject {
 
 }  // namespace whale
 
-#endif  // WHALE_ASSEMBLER_VALUE_OBJECT_H_
+#endif  // PLATHOOK_ASSEMBLER_VALUE_OBJECT_H_

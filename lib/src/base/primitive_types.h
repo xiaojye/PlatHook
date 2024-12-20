@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_PRIMITIVE_TYPES_H_
-#define WHALE_BASE_PRIMITIVE_TYPES_H_
+#ifndef PLATHOOK_BASE_PRIMITIVE_TYPES_H_
+#define PLATHOOK_BASE_PRIMITIVE_TYPES_H_
 
 #include <cstdint>
 #include <cstddef>
@@ -19,4 +19,4 @@ typedef int64_t s8;
 typedef size_t offset_t;
 typedef void* ptr_t;
 
-#endif  // WHALE_BASE_PRIMITIVE_TYPES_H_
+#endif  // PLATHOOK_BASE_PRIMITIVE_TYPES_H_

@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_ART_METHOD_H_
-#define WHALE_ANDROID_ART_ART_METHOD_H_
+#ifndef PLATHOOK_ANDROID_ART_ART_METHOD_H_
+#define PLATHOOK_ANDROID_ART_ART_METHOD_H_
 
 #include <jni.h>
 #include <android/android_build.h>
@@ -144,4 +144,4 @@ class ArtMethod final {
 }  // namespace art
 }  // namespace whale
 
-#endif  // WHALE_ANDROID_ART_ART_METHOD_H_
+#endif  // PLATHOOK_ANDROID_ART_ART_METHOD_H_

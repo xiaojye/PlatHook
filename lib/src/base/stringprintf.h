@@ -1,5 +1,5 @@
-#ifndef WHALE_BASE_STRINGPRINTF_H_
-#define WHALE_BASE_STRINGPRINTF_H_
+#ifndef PLATHOOK_BASE_STRINGPRINTF_H_
+#define PLATHOOK_BASE_STRINGPRINTF_H_
 
 #include <stdarg.h>
 #include <string>
@@ -19,4 +19,4 @@ void StringAppendV(std::string *dst, const char *format, va_list ap);
 
 }  // namespace art
 
-#endif // WHALE_BASE_STRINGPRINTF_H_
+#endif // PLATHOOK_BASE_STRINGPRINTF_H_

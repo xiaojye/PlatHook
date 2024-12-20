@@ -1,5 +1,5 @@
-#ifndef WHALE_ANDROID_ART_WELL_KNOWN_CLASSES_H_
-#define WHALE_ANDROID_ART_WELL_KNOWN_CLASSES_H_
+#ifndef PLATHOOK_ANDROID_ART_WELL_KNOWN_CLASSES_H_
+#define PLATHOOK_ANDROID_ART_WELL_KNOWN_CLASSES_H_
 
 #include <jni.h>
 
@@ -28,4 +28,4 @@ struct WellKnownClasses {
 }  // namespace art
 }  // namespace whale
 
-#endif  // WHALE_ANDROID_ART_WELL_KNOWN_CLASSES_H_
+#endif  // PLATHOOK_ANDROID_ART_WELL_KNOWN_CLASSES_H_
