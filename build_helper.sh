@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 定义支持的架构列表
-declare -a ARCHITECTURES=("x86_64-linux")
+declare -a ARCHITECTURES=("linux-x86_64")
 
 # 函数：显示帮助信息
 show_help() {
@@ -17,17 +17,14 @@ show_help() {
 # 函数：构建指定架构
 build_architecture() {
     local ARCH=$1
-    
+
     echo "Building for architecture: $ARCH"
 
     mkdir -p build/$ARCH
-    cd build/$ARCH || { echo "Failed to change directory to build/$ARCH"; exit 1; }
-    
-    # 使用 CMake 配置和构建项目
-    cmake -DCMAKE_TOOLCHAIN_FILE=../../toolchain/$ARCH-toolchain.cmake ../../ || { echo "CMake configuration failed"; exit 1; }
-    cmake --build . --config Release || { echo "Build failed"; exit 1; }
-    
-    cd ../../ || exit
+    cd build/$ARCH || exit
+    cmake -DCMAKE_TOOLCHAIN_FILE=../../toolchain/${ARCH}-toolchain.cmake ../../
+    cmake --build . --config Release
+    cd ../../
 }
 
 # 函数：构建所有架构
@@ -45,7 +42,6 @@ while [[ $# -gt 0 ]]; do
             exit 0
             ;;
         *)
-            # 检查输入的架构是否支持
             if [[ " ${ARCHITECTURES[*]} " =~ " $1 " ]]; then
                 build_architecture "$1"
             else
