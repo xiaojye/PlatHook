@@ -24,21 +24,6 @@ release编译模式下将无法正常工作。
 
 IOS下的`Binary Static Inline Hook`将在近期开源。
 
-## 你可以用它做什么？
-* 开启App的上帝模式
-* 监控或篡改软件的行为
-* 即时生效的热修复
-* SandBox
-* 注入到系统代替Xposed
-
-## InlineHook
-对于`pcrel指令`, Whale会将其转换为`pc 无关指令`，
-如果在Hook过程有遇到未转换的指令，请提`issue`。
-
-## 关于Jit
-Whale内置了 **Jit Engine**, 当你有更高级的Hook需求时可以通过Jit直接在内存中生成可执行的指令。
-不再需要像从前那样通过工具来生成丑陋的hard code。
-
 ## 编译
 我们已提前编译了Android & IOS的**二进制版本**，您可以在`prebuilt目录`找到它们。
 
