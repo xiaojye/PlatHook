@@ -21,6 +21,7 @@ Others － 这里记录性能优化和安全性增强等改进。
 
 **Removed**
 - 移除LOGO文件
+- 移除prebuilt目录
 
 **Others**
 - .gitignore 新增忽略目录build
