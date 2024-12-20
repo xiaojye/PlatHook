@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.4.1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(LIBRARY_NAME "whale")
+set(LIBRARY_NAME "plathook")
 
 enable_language(ASM)
 SET(CMAKE_ASM_FLAGS "${CFLAGS}  -x assembler-with-cpp")

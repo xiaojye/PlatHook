@@ -1,9 +1,9 @@
-# Whale
+# PlatHook
 
 [![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
 
-Whale是一个跨平台的Hook Framework，同时支持Android、IOS、Linux、MacOS。
-Whale 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了目前所有主流的设备。
+PlatHook 是一个跨平台的Hook Framework，同时支持Android、IOS、Linux、MacOS。
+PlatHook 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了目前所有主流的设备。
 
 ## 特性
 #### Android
@@ -20,17 +20,17 @@ Whale 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了目
 IOS的InlineHook在非越狱设备上只限在debug编译模式下开启，
 release编译模式下将无法正常工作。
 
-为了解决这个问题，Whale将提供`Binary Static Inline Hook`。
+为了解决这个问题，PlatHook 将提供`Binary Static Inline Hook`。
 
 IOS下的`Binary Static Inline Hook`将在近期开源。
 
 ## 编译
 我们已提前编译了Android & IOS的**二进制版本**，您可以在`prebuilt目录`找到它们。
 
-Whale使用了CMake来构建项目，所以你需要在你的系统上安装CMake。
+PlatHook 使用了CMake来构建项目，所以你需要在你的系统上安装CMake。
 
 #### Android
-1. 如果需要使用`Java Hook`, 请把java文件夹的代码复制到你的项目。
+1. 如果需要使用`Java Hook`, 请把android文件夹的代码复制到你的项目。
 
 2. 直接使用二进制，你只需要复制 `prebuilt/Android` 下你所需的abi到你的项目的src/main/jniLibs下。
 
@@ -38,7 +38,7 @@ Whale使用了CMake来构建项目，所以你需要在你的系统上安装CMak
 ```
 externalNativeBuild {
   cmake {
-      path "your/whale/path/CMakeLists.txt"
+      path "your_plathook_path/lib/CMakeLists.txt"
   }
 }
 ```

@@ -6,4 +6,4 @@ include_directories(lib/include)
 include_directories(lib/src)
 
 #add_executable(test test/test_hook.cc)
-#target_link_libraries(test whale)
+#target_link_libraries(test plathook)
