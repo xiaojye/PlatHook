@@ -3,6 +3,7 @@
 [![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
 
 PlatHook 是一个跨平台的Hook Framework，同时支持Android、IOS、Linux、MacOS。
+
 PlatHook 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了目前所有主流的设备。
 
 ## 特性
@@ -17,8 +18,7 @@ PlatHook 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了
 * Native Hook
 
 #### IOS的限制
-IOS的InlineHook在非越狱设备上只限在debug编译模式下开启，
-release编译模式下将无法正常工作。
+IOS的InlineHook在非越狱设备上只限在debug编译模式下开启，release编译模式下将无法正常工作。
 
 为了解决这个问题，PlatHook 将提供`Binary Static Inline Hook`。
 
@@ -32,9 +32,7 @@ PlatHook 使用了CMake来构建项目，所以你需要在你的系统上安装
 #### Android
 1. 如果需要使用`Java Hook`, 请把android文件夹的代码复制到你的项目。
 
-2. 直接使用二进制，你只需要复制 `prebuilt/Android` 下你所需的abi到你的项目的src/main/jniLibs下。
-
-3. 如果需要编译源码，请在build.gradle中指定CMakelists.txt：
+2. 如果需要编译源码，请在build.gradle中指定CMakelists.txt：
 ```
 externalNativeBuild {
   cmake {
