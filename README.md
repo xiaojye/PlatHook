@@ -8,8 +8,6 @@ PlatHook 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了
 
 
 ## 编译
-我们已提前编译了Android & IOS的**二进制版本**，您可以在`prebuilt目录`找到它们。
-
 PlatHook 使用了CMake来构建项目，所以你需要在你的系统上安装CMake。
 
 #### Android
