@@ -6,23 +6,6 @@ PlatHook 是一个跨平台的Hook Framework，同时支持Android、IOS、Linux
 
 PlatHook 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了目前所有主流的设备。
 
-## 特性
-#### Android
-* **Xposed-Style** Method Hook
-* 运行时修改类之间的继承关系
-* 修改对象所属的类
-* 绕过`Hidden API Policy`
-
-#### Darwin/Linux Platforms
-* Internal symbol resolver
-* Native Hook
-
-#### IOS的限制
-IOS的InlineHook在非越狱设备上只限在debug编译模式下开启，release编译模式下将无法正常工作。
-
-为了解决这个问题，PlatHook 将提供`Binary Static Inline Hook`。
-
-IOS下的`Binary Static Inline Hook`将在近期开源。
 
 ## 编译
 我们已提前编译了Android & IOS的**二进制版本**，您可以在`prebuilt目录`找到它们。
