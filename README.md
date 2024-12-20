@@ -24,26 +24,12 @@ release编译模式下将无法正常工作。
 
 IOS下的`Binary Static Inline Hook`将在近期开源。
 
-
 ## 你可以用它做什么？
 * 开启App的上帝模式
 * 监控或篡改软件的行为
 * 即时生效的热修复
 * SandBox
 * 注入到系统代替Xposed
-
-## Whale的兼容性
-- [x] Android 5.0.0
-- [x] Android 5.1.1
-- [x] Android 6.0
-- [x] Android 6.0.1
-- [x] Android 7.1.2
-- [x] Android 8.1.0
-- [x] Android 9.0.0
-- [x] IOS 11.3
-- [x] IOS 12.0
-- [x] MacOS mojave (10.14)
-- (不在清单内表示 `未测试` ）
 
 ## InlineHook
 对于`pcrel指令`, Whale会将其转换为`pc 无关指令`，
