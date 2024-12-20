@@ -2,39 +2,37 @@
 
 [![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
 
-[Chinese Version](https://github.com/xiaojye/whale/blob/master/README.zh-CN.md)
+Whale是一个跨平台的Hook Framework，同时支持Android、IOS、Linux、MacOS。
+Whale 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了目前所有主流的设备。
 
-Whale is a cross-platform Hook Framework, allowed to run *Android、IOS、Linux、MacOS*.
-Whale support both **ARM/THUMB, ARM64, X86, X86_64 (AMD64)**, This covers almost all the major devices available today.
-
-## Feature
+## 特性
 #### Android
 * **Xposed-Style** Method Hook
-* Modify the inheritance relationship between classes at runtime
-* Modifies the class to which the object belongs at runtime
-* bypass `Hidden API Policy`
+* 运行时修改类之间的继承关系
+* 修改对象所属的类
+* 绕过`Hidden API Policy`
 
 #### Darwin/Linux Platforms
 * Internal symbol resolver
 * Native Hook
 
-#### IOS Restrictions
-InlineHook on IOS is only usable in `debug compile mode` on non-jailbreak devices.
-Release compilation mode will not work properly.
+#### IOS的限制
+IOS的InlineHook在非越狱设备上只限在debug编译模式下开启，
+release编译模式下将无法正常工作。
 
-To solve this problem，Whale will provide a new core named `Binary Static Inline Hook`.
+为了解决这个问题，Whale将提供`Binary Static Inline Hook`。
 
-`Binary Static Inline Hook` will open source in the near future.
+IOS下的`Binary Static Inline Hook`将在近期开源。
 
 
-## What can you do with it?
-* Turn on the god mode of an app
-* The act of monitoring or tampering with app
-* Instant hotfix
+## 你可以用它做什么？
+* 开启App的上帝模式
+* 监控或篡改软件的行为
+* 即时生效的热修复
 * SandBox
-* Inject to system and instead of Xposed
+* 注入到系统代替Xposed
 
-## Compatibility
+## Whale的兼容性
 - [x] Android 5.0.0
 - [x] Android 5.1.1
 - [x] Android 6.0
@@ -45,27 +43,27 @@ To solve this problem，Whale will provide a new core named `Binary Static Inlin
 - [x] IOS 11.3
 - [x] IOS 12.0
 - [x] MacOS mojave (10.14)
-- (Not in the list means `untested` ）
+- (不在清单内表示 `未测试` ）
 
 ## InlineHook
-For `pcrel instruction`, Whale will convert it to `pc-independent instruction`，
-If the Hook procedure have not convert instructions, please feedback to ` issue `.
+对于`pcrel指令`, Whale会将其转换为`pc 无关指令`，
+如果在Hook过程有遇到未转换的指令，请提`issue`。
 
-## About Jit
-Whale has a `built-in Jit Engine`, When you have more advanced Hook requirements, you can directly **generate executable instructions** in memory through the Jit.
-There is no longer the need to generate ugly hard code through tools as before.
+## 关于Jit
+Whale内置了 **Jit Engine**, 当你有更高级的Hook需求时可以通过Jit直接在内存中生成可执行的指令。
+不再需要像从前那样通过工具来生成丑陋的hard code。
 
-## Compile
-We have pre-built **binary versions** of Android & IOS. You can find them in the `prebuilt directory`.
+## 编译
+我们已提前编译了Android & IOS的**二进制版本**，您可以在`prebuilt目录`找到它们。
 
-Whale uses CMake to build projects, so you need to install CMake on your system.
+Whale使用了CMake来构建项目，所以你需要在你的系统上安装CMake。
 
 #### Android
-1. If you need to use ` Java Hook ` please copy java folder to your project.
+1. 如果需要使用`Java Hook`, 请把java文件夹的代码复制到你的项目。
 
-2. Direct use of binary，You just copy the files under `prebuilt/Android` to `src/main/jniLibs` in your project.
+2. 直接使用二进制，你只需要复制 `prebuilt/Android` 下你所需的abi到你的项目的src/main/jniLibs下。
 
-3. If you need to compile the source code, specify `CMakeLists.txt` in build.gradle:
+3. 如果需要编译源码，请在build.gradle中指定CMakelists.txt：
 ```
 externalNativeBuild {
   cmake {
@@ -96,10 +94,7 @@ make -j4
 #### Ohter platforms
 ```
 cmake .
-make -j4
+make -j8
 ```
 
 
-
-
-[0]: https://github.com/asLody/whale/blob/master/LOGO.png?raw=true
