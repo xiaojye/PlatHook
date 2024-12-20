@@ -18,7 +18,7 @@ void PlatHookJava_reserved1(JNIEnv *env, jclass cl);
 }
 
 #ifndef WHALE_ANDROID_AUTO_LOAD
-JNIEXPORT jint JNICALL Whale_OnLoad(JavaVM *vm, void *reserved);
+JNIEXPORT jint JNICALL PlatHook_OnLoad(JavaVM *vm, void *reserved);
 #endif
 
 

@@ -5,7 +5,7 @@
 #define CLASS_NAME "com/xiaojye/plathook/PlatHookJava"
 
 #ifndef WHALE_ANDROID_AUTO_LOAD
-#define JNI_OnLoad Whale_OnLoad
+#define JNI_OnLoad PlatHook_OnLoad
 #endif
 
 
