@@ -11,9 +11,9 @@ constexpr const char *kMethodReserved1 = "reserved1";
  */
 extern "C" {
 
-void WhaleRuntime_reserved0(JNIEnv *env, jclass cl);
+void PlatHookJava_reserved0(JNIEnv *env, jclass cl);
 
-void WhaleRuntime_reserved1(JNIEnv *env, jclass cl);
+void PlatHookJava_reserved1(JNIEnv *env, jclass cl);
 
 }
 

@@ -112,10 +112,10 @@ class ArtMethod final {
         if (symbols_->Art_GetMethodShorty != nullptr) {
             return symbols_->Art_GetMethodShorty(env, jni_method_);
         } else {
-            static jmethodID WhaleRuntime_getShorty = nullptr;
+            static jmethodID PlatHookJava_getShorty = nullptr;
             jclass java_class = ArtRuntime::Get()->java_class_;
-            if (WhaleRuntime_getShorty == nullptr) {
-                WhaleRuntime_getShorty = env->GetStaticMethodID(
+            if (PlatHookJava_getShorty == nullptr) {
+                PlatHookJava_getShorty = env->GetStaticMethodID(
                         java_class,
                         "getShorty",
                         "(Ljava/lang/reflect/Member;)Ljava/lang/String;"
@@ -123,7 +123,7 @@ class ArtMethod final {
             }
             jstring jshorty = static_cast<jstring>(env->CallStaticObjectMethod(
                     java_class,
-                    WhaleRuntime_getShorty,
+                    PlatHookJava_getShorty,
                     java_method
             ));
             const char *shorty = env->GetStringUTFChars(jshorty, nullptr);

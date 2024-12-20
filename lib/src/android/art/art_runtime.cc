@@ -90,7 +90,7 @@ bool ArtRuntime::OnLoad(JavaVM *vm, JNIEnv *env, jclass java_class) {
             break;
         }
     }
-    void *native_function = reinterpret_cast<void *>(WhaleRuntime_reserved0);
+    void *native_function = reinterpret_cast<void *>(PlatHookJava_reserved0);
 
     for (offset_t offset = 0; offset != sizeof(u4) * 24; offset += sizeof(u4)) {
         if (MemberOf<ptr_t>(reserved0, offset) == native_function) {
