@@ -16,6 +16,7 @@ Others － 这里记录性能优化和安全性增强等改进。
 
 **Changed**
 - 修改c++源码，使其编译器兼容性更好
+- 将/java目录迁移到/android/src/main/java
 
 **Others**
 - .gitignore 新增忽略目录build
