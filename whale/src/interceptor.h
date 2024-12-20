@@ -6,6 +6,8 @@
 #include "base/logging.h"
 #include "dbi/instruction_set.h"
 #include "dbi/hook_common.h"
+#include <memory>
+#include <functional>
 
 namespace whale {
 

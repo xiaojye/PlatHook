@@ -127,23 +127,19 @@ set(WHALE_X86_64
 
 
 if (CMAKE_SYSTEM_PROCESSOR MATCHES "^arm")
-
-    set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -arch armv7")
+    set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -marm")  # 使用 -marm 替代 -arch armv7
     set(WHALE_SOURCES ${WHALE_SOURCES} ${WHALE_AARCH32})
 
 elseif (CMAKE_SYSTEM_PROCESSOR MATCHES "^aarch64")
-
-    set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -arch arm64")
+    set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -march=armv8-a")  # 使用 -march 替代 -arch arm64
     set(WHALE_SOURCES ${WHALE_SOURCES} ${WHALE_AARCH64})
 
 elseif (CMAKE_SYSTEM_PROCESSOR MATCHES "^(i.86|x86?)$")
-
-    set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -arch x86")
+    set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -m32")  # 使用 -m32 替代 -arch x86
     set(WHALE_SOURCES ${WHALE_SOURCES} ${WHALE_X86} ${WHALE_DISASSEMBLER_X86_OR_X86_64})
 
 elseif (CMAKE_SYSTEM_PROCESSOR MATCHES "^x86_64")
-
-    set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -arch x86_64")
+    set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -m64")  # 使用 -m64 替代 -arch x86_64
     set(WHALE_SOURCES ${WHALE_SOURCES} ${WHALE_X86_64} ${WHALE_DISASSEMBLER_X86_OR_X86_64})
 
 endif ()

@@ -3,6 +3,7 @@
 
 #include "assembler/label.h"
 #include "assembler/memory_region.h"
+#include <cstring>
 
 namespace whale {
 

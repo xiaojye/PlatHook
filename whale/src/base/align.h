@@ -5,6 +5,7 @@
 #include <cstddef>
 #include <zconf.h>
 #include <unistd.h>
+#include <cstring>
 #include "base/cxx_helper.h"
 #include "base/logging.h"
 #include "base/macros.h"

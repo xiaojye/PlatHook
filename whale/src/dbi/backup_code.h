@@ -5,7 +5,7 @@
 #include "base/primitive_types.h"
 #include "base/macros.h"
 #include "base/logging.h"
-
+#include <cstring> // 添加此行以包含 memcpy
 
 namespace whale {
 

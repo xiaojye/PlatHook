@@ -1,5 +1,6 @@
 #include "dbi/hook_common.h"
 #include "hook_common.h"
+#include <cstring>
 
 #if defined(linux)
 

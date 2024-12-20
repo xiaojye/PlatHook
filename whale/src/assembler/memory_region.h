@@ -8,6 +8,7 @@
 #include <base/enums.h>
 #include <base/align.h>
 #include <base/bit_utils.h>
+#include <cstring>
 
 namespace whale {
 

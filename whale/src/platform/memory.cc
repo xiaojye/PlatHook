@@ -4,6 +4,7 @@
 #include "base/cxx_helper.h"
 #include "base/logging.h"
 #include "base/macros.h"
+#include <cstring>
 
 #ifdef __APPLE__
 

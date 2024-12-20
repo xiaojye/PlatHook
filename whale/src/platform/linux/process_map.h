@@ -4,6 +4,7 @@
 #include <malloc.h>
 #include <functional>
 #include "base/primitive_types.h"
+#include <memory>
 
 namespace whale {
 

@@ -43,7 +43,7 @@ DISALLOW_COPY_AND_ASSIGN(TypeName)
   TypeName(const TypeName&);   \
   void operator=(const TypeName&)
 
-#define OPTION __unused
+#define OPTION __attribute__((unused))
 
 #define OPEN_API __attribute__((visibility("default")))
 #define C_API extern "C"
