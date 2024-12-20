@@ -2,8 +2,6 @@ package de.robv.android.xposed;
 
 import android.util.Log;
 
-import com.lody.whale.WhaleRuntime;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Member;
@@ -13,6 +11,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+
+import com.xiaojye.plathook.PlatHookJava;
 
 /**
  * This class contains most of Xposed's central logic, such as initialization and callbacks used by
@@ -99,7 +99,7 @@ public final class XposedBridge {
         if (newMethod) {
             XposedHelpers.resolveStaticMethod(hookMethod);
             AdditionalHookInfo additionalInfo = new AdditionalHookInfo(callbacks);
-            long slot = WhaleRuntime.hookMethodNative(hookMethod.getDeclaringClass(), hookMethod, additionalInfo);
+            long slot = PlatHookJava.hookMethodNative(hookMethod.getDeclaringClass(), hookMethod, additionalInfo);
             if (slot == 0) { //slot有时会有负值
                 throw new IllegalStateException("Failed to hook method: " + hookMethod);
             }
@@ -292,13 +292,13 @@ public final class XposedBridge {
                                               final Object[] args)
             throws NullPointerException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
         long slot = sHookedMethodSlotMap.get(method);
-        return WhaleRuntime.invokeOriginalMethodNative(slot, thisObject, args);
+        return PlatHookJava.invokeOriginalMethodNative(slot, thisObject, args);
     }
 
     public static Object invokeOriginalMethod(final long slot, final Object thisObject,
                                               final Object[] args)
             throws NullPointerException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-        return WhaleRuntime.invokeOriginalMethodNative(slot, thisObject, args);
+        return PlatHookJava.invokeOriginalMethodNative(slot, thisObject, args);
     }
 
     public static final class CopyOnWriteSortedSet<E> {

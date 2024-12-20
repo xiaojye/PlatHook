@@ -1,4 +1,4 @@
-package com.lody.whale;
+package com.xiaojye.plathook;
 
 import android.os.Build;
 
@@ -13,10 +13,10 @@ import java.lang.reflect.Method;
  * <p>
  * NOTICE: Do not move or rename any methods in this class.
  */
-public class WhaleRuntime {
+public class PlatHookJava {
 
     static {
-        System.loadLibrary("whale");
+        System.loadLibrary("plathook");
     }
 
     private static String getShorty(Member member) {

@@ -18,6 +18,8 @@ Others － 这里记录性能优化和安全性增强等改进。
 - 修改c++源码，使其编译器兼容性更好
 - 将/java目录迁移到/android/src/main/java
 - 将/toolchain/ios.toolchain.cmake重命名为ios-toolchain.cmake
+- 将 com.lody.whale 包重命名为 com.xiaojye.plathook
+- 将 WhaleRuntime 类重命名为 PlatHookJava
 
 **Removed**
 - 移除LOGO文件
