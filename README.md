@@ -1,10 +1,9 @@
 # Whale
-![logo][0]
+
+[![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
 
 [Chinese Version](https://github.com/xiaojye/whale/blob/master/README.zh-CN.md)
 
-[![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
-## Overview
 Whale is a cross-platform Hook Framework, allowed to run *Android、IOS、Linux、MacOS*.
 Whale support both **ARM/THUMB, ARM64, X86, X86_64 (AMD64)**, This covers almost all the major devices available today.
 

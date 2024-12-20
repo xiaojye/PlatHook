@@ -1,7 +1,7 @@
 # Whale
-![logo][0]
 
-## 概述
+[![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
+
 Whale是一个跨平台的Hook Framework，同时支持Android、IOS、Linux、MacOS。
 Whale 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了目前所有主流的设备。
 
