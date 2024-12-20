@@ -27,7 +27,7 @@ externalNativeBuild {
 cd toolchain
 
 cmake .. \
--DCMAKE_TOOLCHAIN_FILE=ios.toolchain.cmake \
+-DCMAKE_TOOLCHAIN_FILE=ios-toolchain.cmake \
 -DIOS_PLATFORM=OS64 \
 -DPLATFORM=IOS \
 -DIOS_ARCH=arm64 \
