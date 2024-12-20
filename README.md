@@ -1,6 +1,6 @@
 # PlatHook
 
-[![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 PlatHook 是一个跨平台的Hook Framework，同时支持Android、IOS、Linux、MacOS。
 
@@ -48,3 +48,5 @@ make -j8
 ```
 
 
+## 鸣谢
+* [whale](https://github.com/aslody/whale)
