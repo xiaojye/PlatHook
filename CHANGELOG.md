@@ -23,6 +23,7 @@ Others － 这里记录性能优化和安全性增强等改进。
 
 **Others**
 - .gitignore 新增忽略目录build
+- 更改LICENSE为GPL-3.0
 
 
 ## 2024-12-18
