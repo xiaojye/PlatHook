@@ -11,7 +11,7 @@ PlatHook 支持**ARM/THUMB、ARM64、X86、X86_64 (AMD64)**，这几乎覆盖了
 PlatHook 使用了CMake来构建项目，所以你需要在你的系统上安装CMake。
 
 #### Android
-1. 如果需要使用`Java Hook`, 请把android文件夹的代码复制到你的项目。
+1. 如果需要使用`Java Hook`, 请把java文件夹的代码复制到你的项目。
 
 2. 如果需要编译源码，请在build.gradle中指定CMakelists.txt：
 ```

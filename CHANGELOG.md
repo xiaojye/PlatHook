@@ -9,6 +9,12 @@ Others － 这里记录性能优化和安全性增强等改进。
 ```
 
 
+## 2024-12-22
+
+**Changed**
+- revert: 将/java目录迁移到/android/src/main/java
+
+
 ## 2024-12-20
 
 **Added**
