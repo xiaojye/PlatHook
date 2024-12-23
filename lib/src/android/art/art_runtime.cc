@@ -1,9 +1,9 @@
 #include <dlfcn.h>
 #include "whale.h"
 #include "android/android_build.h"
+#include "android/native_on_load.h"
 #include "android/art/art_runtime.h"
 #include "android/art/modifiers.h"
-#include "android/art/native_on_load.h"
 #include "android/art/art_method.h"
 #include "android/art/art_symbol_resolver.h"
 #include "android/art/scoped_thread_state_change.h"
@@ -30,7 +30,7 @@ void PreLoadRequiredStuff(JNIEnv *env) {
 }
 
 
-bool ArtRuntime::OnLoad(JavaVM *vm, JNIEnv *env, jclass java_class) {
+bool ArtRuntime::InitRuntime(JavaVM *vm, JNIEnv *env, jclass java_class) {
 #define CHECK_FIELD(field, value)  \
     if ((field) == (value)) {  \
         LOG(ERROR) << "Failed to find " #field ".";  \

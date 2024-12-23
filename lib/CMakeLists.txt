@@ -65,7 +65,7 @@ set(PLATHOOK_DARWIN_SOURCES
         )
 
 set(PLATHOOK_ANDROID_ART
-        src/android/art/native_on_load.cc
+        src/android/native_on_load.cc
         src/android/art/art_runtime.cc
         src/android/art/art_symbol_resolver.cc
         src/android/art/java_types.cc

@@ -1,7 +1,7 @@
 #include "android/jni_helper.h"
 #include "android/android_build.h"
 #include "android/art/scoped_thread_state_change.h"
-#include "art_runtime.h"
+#include "android/art/art_runtime.h"
 
 namespace whale {
 namespace art {

@@ -88,7 +88,7 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
         return JNI_ERR;
     }
     auto runtime = whale::art::ArtRuntime::Get();
-    if (!runtime->OnLoad(vm, env, cl)) {
+    if (!runtime->InitRuntime(vm, env, cl)) {
         LOG(ERROR) << "Runtime setup failed";
         return JNI_ERR;
     }

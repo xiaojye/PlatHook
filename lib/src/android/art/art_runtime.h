@@ -68,7 +68,7 @@ class ArtRuntime final {
 
     ArtRuntime() {}
 
-    bool OnLoad(JavaVM *vm, JNIEnv *env, jclass java_class);
+    bool InitRuntime(JavaVM *vm, JNIEnv *env, jclass java_class);
 
     jlong HookMethod(JNIEnv *env, jclass decl_class, jobject hooked_java_method,
                      jobject addition_info);
