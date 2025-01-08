@@ -9,13 +9,6 @@ Others － 这里记录性能优化和安全性增强等改进。
 ```
 
 
-## 2025-01-07
-- Changed: 重构目录结构
-
-**Changed**
-- revert: 将/java目录迁移到/android/src/main/java
-
-
 ## 2024-12-22
 
 **Changed**
