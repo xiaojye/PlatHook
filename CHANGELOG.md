@@ -9,6 +9,12 @@ Others － 这里记录性能优化和安全性增强等改进。
 ```
 
 
+## 2025-01-08
+
+**Changed**
+- 将cpplint.py迁移到/lib/cpplint.py
+
+
 ## 2024-12-22
 
 **Changed**
